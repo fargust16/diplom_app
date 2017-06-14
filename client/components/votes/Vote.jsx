@@ -36,7 +36,7 @@ class Vote extends React.Component {
 
         if(checkCook === false && !isEmptyObject(this.props.expert)) {
             let d = new Date();
-            let minutes = 10;
+            let minutes = 360;
             d.setTime(d.getTime() + (minutes*60*1000));
 
             cookies.set('expertCook', this.props.expert, {path: '/', expires: d})
