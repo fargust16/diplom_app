@@ -1,0 +1,273 @@
+.PartsList{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.PartsList-name {
+    font-size: 18px;
+}
+
+.PartsList-part{
+    flex: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: center;
+
+    font-size: 18px;
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow .3s;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+        .Note__del-icon {
+            display: block;
+        }
+    }
+}
+
+.PartsList-part__preview{
+    flex-grow: 3;
+}
+
+.PartsList-part__info{
+    flex-grow: 5;
+}
+
+.PartsList-part__footer {
+    flex-grow: 1;
+    flex: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.PartsList-part__footer-delete_title {
+
+}
+
+.PartsList-part__footer-btnConfirm {
+    border: 0 none;
+    border-radius: 24px;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 100ms ease-in-out;
+    background: #3ac569;
+    color: white;
+
+    &:hover {
+        opacity: .9;
+        background: #2FA857;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.PartsList-part__footer-btnDelete{
+    border: 0 none;
+    border-radius: 24px;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 100ms ease-in-out;
+    background: #f0ad4e;
+    color: white;
+
+    &:hover {
+        opacity: .9;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.PartsList-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.PartsList-footer-btnCancel {
+    border: 0 none;
+    border-radius: 24px;
+    padding: 10px 15px;
+    margin: 15px 0 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 100ms ease-in-out;
+    background: #3ac569;
+    color: white;
+
+    &:hover {
+        opacity: .9;
+        background: #2FA857;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.table {
+}
+
+.reactable-data td {
+    width: 120px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.reactable-data tr {
+    font-size: 16px;
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow .3s;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+        .Note__del-icon {
+            display: block;
+        }
+    }
+}
+
+.reactable-pagination {
+    position: absolute;
+    display: block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.reactable-pagination td{
+    display: block;
+    width: 768px;
+}
+
+.reactable-pagination tr{
+    display: block;
+    width: 768px;
+}
+
+.reactable-page-button {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.reactable-current-page {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.reactable-next-page, .reactable-previous-page {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.reactable-th-fio, .reactable-th-work_name, .reactable-th-confirmed {
+    cursor: pointer;
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

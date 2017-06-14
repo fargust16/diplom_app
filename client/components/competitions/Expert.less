@@ -1,0 +1,83 @@
+.Expert {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.Expert-fio {
+	flex-grow: 2;
+    max-width: 300px;
+}
+
+.Expert-email {
+	flex-grow: 1;
+}
+
+.Expert-confirmed {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.Expert-btn {
+	border: 0 none;
+    border-radius: 24px;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 100ms ease-in-out;
+    color: white;
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.Edit {
+    flex: 0 0 80px;
+    background: #3ac569;
+
+    &:hover {
+        opacity: .9;
+        background: #2e9d54;
+        transition: all 100ms ease;
+    }
+}
+
+.Delete {
+    flex: 0 0 60px;
+    background: #f0ad4e;
+
+    &:hover {
+        opacity: .9;
+        background: #c08a3e;
+        transition: all 100ms ease;
+    }
+}
+
+.SendConf {
+    flex: 0 0 160px;
+    background: #3ac569;
+
+    &:hover {
+        opacity: .9;
+        background: #2e9d54;
+        transition: all 100ms ease;
+    }   
+}

@@ -1,0 +1,31 @@
+.ListOfResults {
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    width: 1024px;
+    padding: 0 25px;
+}
+
+.Results-comp__header {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Results-comp__cont {
+	cursor: pointer;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &:active {
+        opacity: .75;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

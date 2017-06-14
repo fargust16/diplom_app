@@ -1,0 +1,83 @@
+.Vote-tabs {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; 
+}
+
+.Vote-tabs__header-bg {
+    width: 100vw;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Vote-tabs__header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    height: 80px;
+    padding: 0 45px;
+}
+
+.Vote-tabs__header-h2 {
+    font-size: 24px;
+    flex-grow: 2;
+}
+
+.Vote-tabs__header-stages {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    flex-grow: 5;
+}
+
+.Vote-tabs__header-stages__tabs {
+    height: 80px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-grow: 2;
+
+    &:hover {
+        opacity: .9;
+        background: #CE84CA;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .75;
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    } 
+
+
+}
+
+.activeT {
+    background: #CE84CA;
+    color: #fff;
+}
+
+.Vote-tabs__body {
+    width: 1024px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 45px;
+    position: relative; 
+}

@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #eaeaea;
+	width: 100vw;
+}
+
+#entry-point {
+	display: flex;
+	flex-direction: column;
+}

@@ -1,0 +1,50 @@
+.Results-comp__content {
+	display: flex;
+	flex-flow: column;
+}
+
+.Results-comp__content hr {
+	background: #000;
+	height: 2px;
+	border: none;
+	width: 100%;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.Results-comp__content-header {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Results-comp__content-results {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+
+.Results-comp__content-results:nth-child(2n+1) {
+	background: #e5e5e5;
+}
+
+.Results-comp__content-results__header {
+	flex-grow: 2;
+	max-width: 250px;
+}
+
+.Results-comp__content-results__marks {
+	flex-grow: 4;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+}
+
+.mark {
+	width: 100px;
+}
